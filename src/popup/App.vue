@@ -1,11 +1,20 @@
 <template>
-  <div></div>
+  <div>это паапап
+    <pre>
+    {{ hist }}
+  </pre>
+  </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+  computed: {
+    hist () {
+      return this.$store.state.hist
+    }
+  }
 }
 </script>
 
